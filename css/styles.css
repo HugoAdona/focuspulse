@@ -1,0 +1,106 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff4d4d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #eb0000;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ff4d4d transparent;
+}
+
+body {
+  background: #8b0000;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+body #container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+body #container .main-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+body #container .length-control {
+  width: 250px;
+}
+body #container button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+body #container .btn-level,
+body #container .length-control {
+  display: inline-block;
+}
+body #container .btn-level .btn-level:nth-child(3),
+body #container .length-control .btn-level:nth-child(3) {
+  width: 40px;
+}
+body #container .timer {
+  border: 7px solid #4b0000;
+  margin: 20px auto 10px auto;
+  width: 270px;
+  height: 160px;
+  border-radius: 25px;
+  position: relative;
+}
+body #container .timer .timer-wrapper {
+  position: absolute;
+  width: 190px;
+  height: 110px;
+  left: 50%;
+  top: 50%;
+  margin-left: -95px;
+  margin-top: -57px;
+  font-size: 25px;
+}
+body #container .timer #time-left {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+}
+body #container .timer .timer-control button:active {
+  color: #4b0000;
+}
+
+@media screen and (max-width: 500px) {
+  #container {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+}
+.author {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ff6b6b;
+}
+.author a {
+  text-decoration: none;
+  color: #ffb3b3;
+  line-height: 26px;
+}
