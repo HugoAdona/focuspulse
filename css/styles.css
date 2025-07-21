@@ -39,7 +39,7 @@ body #container .main-title {
   font-weight: 600;
 }
 body #container .length-control {
-  width: 250px;
+  width: 260px;
 }
 body #container button {
   background: none;
@@ -47,6 +47,10 @@ body #container button {
   border: none;
   color: white;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+body #container button:hover {
+  color: #ffb3b3;
 }
 body #container .btn-level,
 body #container .length-control {
@@ -57,11 +61,11 @@ body #container .length-control .btn-level:nth-child(3) {
   width: 40px;
 }
 body #container .timer {
-  border: 7px solid #4b0000;
+  border: 5px solid #4b0000;
   margin: 20px auto 10px auto;
   width: 270px;
   height: 160px;
-  border-radius: 25px;
+  border-radius: 20px;
   position: relative;
 }
 body #container .timer .timer-wrapper {
@@ -72,7 +76,7 @@ body #container .timer .timer-wrapper {
   top: 50%;
   margin-left: -95px;
   margin-top: -57px;
-  font-size: 25px;
+  font-size: 20px;
 }
 body #container .timer #time-left {
   font-family: "Poppins", sans-serif;

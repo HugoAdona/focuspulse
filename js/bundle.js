@@ -213,7 +213,10 @@
                 this.state.timerState === "running"
                   ? "fa fa-pause fa-2x"
                   : "fa fa-play fa-2x",
-              style: { marginLeft: "10px" },
+              style: {
+                marginLeft: "5px",
+                paddingRight: "10px",
+              },
             })
           ),
           React.createElement(
